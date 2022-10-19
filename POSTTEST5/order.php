@@ -9,7 +9,7 @@ if (isset($_POST["tambah"])) {
     $alamat = htmlspecialchars($_POST["alamat"]);
     $metode = htmlspecialchars($_POST["metode"]);
 
-    $sql = "INSERT INTO pesanan  VALUES ('$nama', '$no_telp', '$merk', $jumlah, '$alamat', '$metode')";
+    $sql = "INSERT INTO pesanan  VALUES ('', '$nama', '$no_telp', '$merk', $jumlah, '$alamat', '$metode')";
 
     $result = mysqli_query($conn, $sql);
 
