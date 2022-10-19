@@ -3,7 +3,7 @@ require 'koneksi.php';
 
 $id = $_GET['id'];
 
-$result = mysqli_query($conn, "DELETE FROM pesanan WHERE nama = '$id'");
+$result = mysqli_query($conn, "DELETE FROM pesanan WHERE id = '$id'");
 
 if ( $result ) {
     echo"
