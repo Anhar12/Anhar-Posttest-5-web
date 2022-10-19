@@ -66,8 +66,8 @@
                     <td> <?php echo $pesan['jumlah'] ;?> </td>
                     <td> <?php echo $pesan['alamat'] ;?> </td>
                     <td> <?php echo $pesan['metode'] ;?> </td>
-                    <td> <a href="edit.php?id=<?php echo $pesan['nama']; ?>" class="updt"> Update 
-                         </a> / <a href="hapus.php?id=<?php echo $pesan['nama']; ?>" class = "dlt"> Delete </a> </td>
+                    <td> <a href="edit.php?id=<?php echo $pesan['id']; ?>" class="updt"> Update 
+                         </a> / <a href="hapus.php?id=<?php echo $pesan['id']; ?>" class = "dlt"> Delete </a> </td>
                 </tr>
                 <?php $i++; endforeach;?>
             </table>
