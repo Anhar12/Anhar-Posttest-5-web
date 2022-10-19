@@ -82,7 +82,7 @@
                 <p>
                     Jangan lupa belanja di AnharZtore, serta follow akun ig saya <a href="https://www.instagram.com/anharrrrrr_/" id="ig"> @anharrrrrr_ </a> 
                     <br>
-                    Demikian tampilan web UTS saya, wassalamualaikum warahmatullahi wabarakatuh
+                    Demikian tampilan web Posttest 5 saya, wassalamualaikum warahmatullahi wabarakatuh
                 </p>
             </div>
             <div id="kontak">
