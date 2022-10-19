@@ -2,7 +2,7 @@
 require 'koneksi.php';
 $id = $_GET['id'];
 
-$result = mysqli_query($conn, "SELECT * FROM pesanan WHERE nama='$id'");
+$result = mysqli_query($conn, "SELECT * FROM pesanan WHERE id ='$id'");
 
 $pesanan = [];
 
@@ -10,7 +10,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     $pesanan[] = $row;
 }
 
-$pesan = $pesanan[0];
+// $pesan = $pesanan[0];
 
 if (isset($_POST["tambah"])) {
     $nama = htmlspecialchars($_POST["nama"]);
@@ -20,7 +20,7 @@ if (isset($_POST["tambah"])) {
     $alamat = htmlspecialchars($_POST["alamat"]);
     $metode = htmlspecialchars($_POST["metode"]);
 
-    $sql = "UPDATE pesanan SET nama = '$nama', no_telp = '$no_telp', merk = '$merk', jumlah = $jumlah, alamat = '$alamat', metode = '$metode' WHERE nama = '$id'";
+    $sql = "UPDATE pesanan SET nama = '$nama', no_telp = '$no_telp', merk = '$merk', jumlah = $jumlah, alamat = '$alamat', metode = '$metode' WHERE id = '$id'";
 
     $result = mysqli_query($conn, $sql);
 
