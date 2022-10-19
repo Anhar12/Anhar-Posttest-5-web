@@ -62,7 +62,7 @@ if (isset($_POST["tambah"])) {
                 <ul>
                     <li> <a href="index.php"> HOME </a></li>
                     <li> <a href="index.php"> PRODUCT </a></li>
-                    <li> <a href="order.php"> PESANAN </a></li>
+                    <li> <a href="kelola.php"> KELOLA </a></li>
                     <li> <a href="about.php"> ABOUT </a></li>
                     <li>
                         <label>
