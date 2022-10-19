@@ -77,7 +77,7 @@ if (isset($_POST["tambah"])) {
     <!-- main content -->
         <div class="form">
             <form method="post" action="">
-                <h2>Form Tambah Data Pesanan</h2>
+                <h2>Form Update Data Pesanan</h2>
                 <div class="order-detail">
                     <div class="input">
                         <span class="detail"> Nama Lengkap </span>
