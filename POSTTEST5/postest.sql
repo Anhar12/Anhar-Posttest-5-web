@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2022 at 02:42 PM
+-- Generation Time: Oct 19, 2022 at 05:46 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `pesanan` (
+  `id` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `no_telp` varchar(15) NOT NULL,
   `merk` varchar(50) NOT NULL,
@@ -40,9 +41,29 @@ CREATE TABLE `pesanan` (
 -- Dumping data for table `pesanan`
 --
 
-INSERT INTO `pesanan` (`nama`, `no_telp`, `merk`, `jumlah`, `alamat`, `metode`) VALUES
-('Anhar Khoirun Najib', '085213753723', 'Samsung Galaxy A71', 5, 'Jl. Apt. Pranoto, Gg. Purnama', 'Online'),
-('Udin Petot', '08246836734', 'Xiaomi Poco X4 Pro 5G', 3, 'Jl. Kematian', 'Cash');
+INSERT INTO `pesanan` (`id`, `nama`, `no_telp`, `merk`, `jumlah`, `alamat`, `metode`) VALUES
+(4, 'Anhar Khoirun Najib', '08123123123', 'Oppo Reno8 Pro', 8, 'Jl. Kematian', 'Cash'),
+(5, 'Udin Petot', '08235828732', 'Realme GT Neo 3T', 5, 'Jl. Kematian', 'Online');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `pesanan`
+--
+ALTER TABLE `pesanan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `pesanan`
+--
+ALTER TABLE `pesanan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
